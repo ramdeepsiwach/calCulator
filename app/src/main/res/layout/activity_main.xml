@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:background="#000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultString"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textAlignment="viewEnd"
+            android:gravity=""
+            tools:ignore="RtlCompat" />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/resultString"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textAlignment="viewEnd"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="3"
+        android:layout_weight="0.7">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button7"
+            android:textSize="36sp"
+            android:onClick="button7Clicked"
+            android:background="@drawable/white_button"
+            android:layout_rowWeight="1" tools:targetApi="lollipop"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:textSize="36sp"
+            android:background="@drawable/white_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button8Clicked"
+            android:text="@string/button8"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="button9Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button9"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:onClick="buttonDivideClicked"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_border"
+            android:text="@string/buttonDivide"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_rowWeight="1"
+            android:onClick="button4Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/button4"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="button5Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button5"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="button6Clicked"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/white_button"
+            android:text="@string/button6"
+            android:textCursorDrawable="@drawable/white_button"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/buttonMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="buttonMultiClicked"
+            android:background="@drawable/button_border"
+            android:text="@string/buttonMulti"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:onClick="button1Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_height="wrap_content"
+            android:text="@string/button1"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:onClick="button2Clicked"
+            android:layout_height="wrap_content"
+            android:text="@string/button2"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_width="wrap_content"
+            android:onClick="button3Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_height="wrap_content"
+            android:text="@string/button3"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="buttonSubClicked"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/button_border"
+            android:text="@string/buttonSub"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+    </GridLayout>
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_weight="1.1">
+        <Button
+            android:id="@+id/button0"
+            android:layout_columnWeight="15"
+            android:layout_rowWeight="1"
+            android:onClick="button0Clicked"
+            android:background="@drawable/white_button"
+            android:textSize="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button0"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:onClick="buttonAddClicked"
+            android:background="@drawable/button_border"
+            android:text="@string/buttonAdd"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:rowCount="1"
+        android:layout_weight="1.1">
+
+        <Button
+            android:id="@+id/buttonC"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_rowWeight="1"
+            android:onClick="buttonCClicked"
+            android:layout_columnWeight="1"
+            android:text="@string/buttonC"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/buttonEqu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_rowWeight="1"
+            android:onClick="buttonEquClicked"
+            android:layout_columnWeight="15"
+            android:background="@drawable/button_border"
+            android:text="@string/buttonEqual"
+            android:textSize="36sp"
+            tools:targetApi="lollipop" />
+
+    </GridLayout>
+
+</LinearLayout>
